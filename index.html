@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bottone Esporta — tabelle da sito a Excel pulito</title>
+<meta name="description" content="Il bottone Esporta che il tuo gestionale non ha: qualsiasi tabella web in Excel pulito con un click. Tutto in locale.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif; color: #0f172a; background: #fff; }
+  a { color: inherit; }
+  .contenitore { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  .hero { background: linear-gradient(160deg, #0f172a 0%, #1e3a8a 100%); color: #fff; padding: 72px 0 84px; text-align: center; }
+  .hero img.icona { width: 84px; height: 84px; border-radius: 20px; box-shadow: 0 12px 32px rgba(0,0,0,.4); }
+  .hero h1 { font-size: 46px; font-weight: 800; letter-spacing: -0.5px; margin-top: 28px; }
+  .hero p.sotto { font-size: 21px; color: #bfdbfe; margin-top: 14px; }
+  .cta { display: inline-block; margin-top: 34px; background: #34d399; color: #064e3b; font-weight: 800; font-size: 18px; padding: 16px 34px; border-radius: 12px; text-decoration: none; }
+  .cta:hover { background: #6ee7b7; }
+  .hero .nota-cta { margin-top: 12px; font-size: 14px; color: #93c5fd; }
+
+  .sezione { padding: 72px 0; }
+  .sezione.alt { background: #f1f5f9; }
+  .sezione h2 { font-size: 32px; font-weight: 800; text-align: center; letter-spacing: -0.3px; }
+  .sezione .intro { text-align: center; font-size: 18px; color: #475569; margin-top: 10px; }
+
+  .griglia { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
+  .carta { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px; }
+  .carta .punto-icona { width: 46px; height: 46px; border-radius: 12px; background: #eff6ff; display: flex; align-items: center; justify-content: center; }
+  .carta h3 { font-size: 19px; font-weight: 700; margin-top: 16px; }
+  .carta p { font-size: 15.5px; color: #475569; margin-top: 8px; line-height: 1.55; }
+
+  .schermata { display: block; width: 100%; border-radius: 16px; box-shadow: 0 24px 60px rgba(15,23,42,.18); margin-top: 48px; }
+
+  .prezzi { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 48px; max-width: 760px; margin-left: auto; margin-right: auto; }
+  .piano { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; }
+  .piano.pro { border: 2px solid #1d4ed8; position: relative; }
+  .piano .nome-piano { font-weight: 800; font-size: 17px; }
+  .piano .costo { font-size: 38px; font-weight: 800; margin-top: 8px; }
+  .piano .costo small { font-size: 15px; font-weight: 600; color: #64748b; }
+  .piano ul { list-style: none; margin-top: 20px; }
+  .piano li { padding: 7px 0 7px 30px; font-size: 15.5px; position: relative; }
+  .piano li::before { content: "✓"; position: absolute; left: 0; color: #15803d; font-weight: 800; }
+  .etichetta-pro { position: absolute; top: -14px; left: 32px; background: #1d4ed8; color: #fff; font-size: 12px; font-weight: 800; padding: 4px 12px; border-radius: 999px; }
+
+  .privacy-banda { background: #0f172a; color: #fff; text-align: center; padding: 56px 0; }
+  .privacy-banda h2 { font-size: 28px; font-weight: 800; }
+  .privacy-banda p { color: #94a3b8; font-size: 17px; margin-top: 12px; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
+  footer { padding: 36px 0; text-align: center; font-size: 14px; color: #64748b; }
+  footer a { color: #1d4ed8; }
+
+  @media (max-width: 860px) {
+    .hero h1 { font-size: 32px; }
+    .griglia, .prezzi { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="contenitore">
+    <img class="icona" src="icona.png" alt="Bottone Esporta">
+    <h1>Il bottone Esporta che il tuo<br>gestionale non ha</h1>
+    <p class="sotto">Qualsiasi tabella web in Excel pulito, con un click. Numeri veri, date vere, zero copia-incolla.</p>
+    <a class="cta" href="#" title="Presto sul Chrome Web Store">Aggiungi a Chrome — Gratis</a>
+    <p class="nota-cta">Funziona anche su Edge e Brave · Nessun account richiesto</p>
+  </div>
+</section>
+
+<section class="sezione">
+  <div class="contenitore">
+    <h2>Basta ricopiare a mano</h2>
+    <p class="intro">Copia-incolla da un portale aziendale = tutto in una colonna e mezz'ora persa. C'è un modo migliore.</p>
+    <div class="griglia">
+      <div class="carta">
+        <div class="punto-icona"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><rect x="4" y="19" width="16" height="2" rx="1" fill="#1d4ed8" stroke="none"/></svg></div>
+        <h3>Excel pulito, subito</h3>
+        <p>Numeri su cui le somme funzionano, date che si ordinano, righe vuote e intestazioni ripetute eliminate. Filtri già attivi.</p>
+      </div>
+      <div class="carta">
+        <div class="punto-icona"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="13" height="16" rx="2"/><path d="M19 8h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-9"/><path d="M7 9h5M7 13h5"/></svg></div>
+        <h3>Unisce le pagine per te</h3>
+        <p>La tabella continua su 40 pagine col bottone «Avanti»? Clicca lui, pagina dopo pagina, e consegna un unico file.</p>
+      </div>
+      <div class="carta">
+        <div class="punto-icona"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg></div>
+        <h3>Salva l'export, rifallo in un click</h3>
+        <p>Lo stesso export ogni settimana? Salvalo con un nome: la prossima volta lo ritrovi pronto, unione pagine compresa.</p>
+      </div>
+    </div>
+    <img class="schermata" src="shot2.png" alt="Prima e dopo: dalla tabella del gestionale all'Excel pulito">
+  </div>
+</section>
+
+<section class="privacy-banda">
+  <div class="contenitore">
+    <h2>I dati del tuo ufficio restano nel tuo browser</h2>
+    <p>Tutto avviene in locale: nessun dato inviato a server, nessun account, nessuna raccolta dati. Pensato per i gestionali e i portali interni aziendali.</p>
+  </div>
+</section>
+
+<section class="sezione alt">
+  <div class="contenitore">
+    <h2>Prezzo onesto, niente abbonamento</h2>
+    <p class="intro">Il cuore è gratis per sempre. Il Pro lo paghi una volta sola.</p>
+    <div class="prezzi">
+      <div class="piano">
+        <div class="nome-piano">Gratis</div>
+        <div class="costo">0€ <small>per sempre</small></div>
+        <ul>
+          <li>Export di qualsiasi tabella in Excel e CSV</li>
+          <li>Pulizia automatica completa</li>
+          <li>Excel già formattato, filtri attivi</li>
+          <li>Nessun limite di righe</li>
+        </ul>
+      </div>
+      <div class="piano pro">
+        <span class="etichetta-pro">PRO</span>
+        <div class="nome-piano">Pro</div>
+        <div class="costo">24€ <small>una volta sola, tuo per sempre</small></div>
+        <ul>
+          <li>Tutto il piano Gratis</li>
+          <li>Unione multi-pagina automatica</li>
+          <li>«I miei export»: salva e riesegui in un click</li>
+          <li>Export PDF</li>
+          <li>Più tabelle in un solo file Excel</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contenitore">
+    Bottone Esporta · <a href="privacy-policy.html">Privacy policy</a> · Contatti: <a href="mailto:Ludovecchio93@gmail.com">Ludovecchio93@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
